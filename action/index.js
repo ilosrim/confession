@@ -1,0 +1,2 @@
+require('./comments');
+require('./types')
