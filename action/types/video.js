@@ -13,8 +13,8 @@ const {
 const composer = new Composer();
 
 composer.on('video', ctx => {
-  ctx.telegram.sendPhoto(admin, ctx.message.video.file_id).then()
-  ctx.telegram.sendPhoto(confission, ctx.message.video.file_id).then()
+  ctx.telegram.sendVideo(admin, ctx.message.video.file_id).then()
+  ctx.telegram.sendVideo(confission, ctx.message.video.file_id).then()
 })
 
 bot.use(composer.middleware())
